@@ -58,6 +58,8 @@ body {
 /* Base */
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -100,7 +102,38 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+  /* font-weight: 600; */
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
+/* Header */
+header {
+  background-color: lightgray;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+  gap: 64px;
 }
 
 /* Hero section */
@@ -120,29 +153,35 @@ ul {
 .accent {
   color: var(--color-brand-light);
 }
-
-.advantages-list {
-  color: var(--primary-light);
+/* Advantages section */
+.advantages-section {
   background-color: var(--color-brand-light);
+  padding: 16px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  color: var(--primary-light);
 }
 .advantages-item {
   font-size: 20px;
   font-weight: 300;
 }
 
-.section-title {
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 1.3;
-}
-.section-title .accent {
-  color: var(--color-brand-dark);
-}
+/* Traditions */
+
 .traditions-sections {
   padding-top: 96px;
 }
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
 .traditions-text .brand {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 .traditions-title {
@@ -151,6 +190,12 @@ ul {
 
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+.traditions-text-limited {
+  max-width: 335px;
+}
+.traditions-content {
+  max-width: 710px;
 }
 
 /* chefs */
@@ -165,9 +210,21 @@ ul {
 }
 
 /* formats */
-address {
-  font-style: normal;
+
+.formats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+.format-card {
+  border-radius: 16px;
+  border: 1px solid lightgray;
+  padding: 24px;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -175,6 +232,7 @@ address {
   font-size: 24px;
   font-weight: 600;
 }
+
 .format-text p {
   font-weight: 300;
   font-size: 14px;
@@ -185,6 +243,9 @@ address {
 }
 
 /* Address link */
+address {
+  font-style: normal;
+}
 .address-link {
   color: var(--primary-light);
   font-size: 16px;
