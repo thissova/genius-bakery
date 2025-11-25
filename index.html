@@ -199,7 +199,7 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <form autocomplete="off" name="contact-form" novalidate>
+              <form autocomplete="off" name="contact-form">
                 <div class="form-field">
                   <input
                     class="form-input"
@@ -207,6 +207,9 @@
                     name="user-name"
                     id="user-name"
                     placeholder="Ім'я"
+                    minlength="2"
+                    maxlength="20"
+                    required
                   />
                   <label class="form-label visually-hidden" for="user-name"
                     >Ім'я</label
@@ -220,6 +223,7 @@
                     name="tel"
                     id="tel"
                     placeholder="Телефон"
+                    pattern="^\+[0-9]{12}"
                   />
                   <label class="form-label visually-hidden" for="tel"
                     >Телефон</label
@@ -238,7 +242,17 @@
                     >Електронна пошта</label
                   >
                 </div>
-
+                <!-- <div class="checkbox">
+                  <input
+                    class="visually-hidden form-checkbox"
+                    type="checkbox"
+                    name="terms-conditions"
+                    id="terms-conditions"
+                  />
+                  <label class="form-label" for="terms-conditions"
+                    >Я точно погоджуюсь з політикою конфіденційності</label
+                  >
+                </div> -->
                 <button class="button form-button" type="submit">
                   Замовити дзвінок
                 </button>

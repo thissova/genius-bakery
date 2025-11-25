@@ -99,7 +99,12 @@ ul {
 .button:hover {
   background: transparent;
   color: var(--color-brand-dark);
+  border-color: currentColor;
   cursor: pointer;
+}
+.button:disabled {
+  background-color: lightgray;
+  color: gray;
 }
 
 .link {
@@ -536,4 +541,24 @@ address {
   text-align: center;
   color: var(--color-brand-dark);
   margin-bottom: 72px;
+}
+.checkbox {
+  position: relative;
+}
+.form-label {
+  padding: 24px;
+}
+.form-label::before {
+  border-radius: 2px;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  content: '';
+  border: 1px solid var(--color-primary-dark);
+}
+.form-checkbox:checked + .form-label::before {
+  background-color: var(--color-brand-normal);
 }
