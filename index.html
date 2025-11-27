@@ -357,58 +357,60 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
-        <button class="modal-btn-close modal-btn-open" type="button">
+        <button class="modal__btn-close modal-btn-close" type="button">
           Close
         </button>
         <form autocomplete="off" name="modal-form">
-          <div>
-            <h2 class="form-title">Замовити дзвінок</h2>
-            <p class="form-subtitle">
+          <div class="input">
+            <h2 class="input__title">Замовити дзвінок</h2>
+            <p class="input__subtitle">
               Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
             </p>
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field input">
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
               required
             />
-            <label class="form-label visually-hidden" for="user-name"
+            <label class="input__label visually-hidden" for="user-name"
               >Ім'я</label
             >
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field input">
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               name="tel"
               id="tel"
               placeholder="Телефон"
             />
-            <label class="form-label visually-hidden" for="tel">Телефон</label>
+            <label class="input__label visually-hidden" for="tel"
+              >Телефон</label
+            >
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field input">
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               name="email"
               id="email"
               placeholder="Електронна пошта"
             />
-            <label class="form-label visually-hidden" for="email"
+            <label class="input__label visually-hidden" for="email"
               >Електронна пошта</label
             >
           </div>
 
-          <button class="button form-button" type="submit">
+          <button class="button modal__button" type="submit">
             Замовити дзвінок
           </button>
         </form>
