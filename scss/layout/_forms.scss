@@ -1,51 +1,42 @@
-/* .form-label {
-  position: absolute;
-  top: 16px;
-  left: 42px;
-  color: var(--color-secondary-dark);
-} */
-
-.form-input {
-  padding: 16px 42px;
-  width: 100%;
-  border: 1px solid var(--color-secondary-dark);
-  color: var(--color-primary-dark);
-  border-radius: 16px;
-  font-style: 16px;
-  line-height: 1.17;
-  background-color: transparent;
-}
-.form-field {
+.input {
   position: relative;
-  margin-bottom: 32px;
-}
-.form-input:focus {
-  border-color: var(--color-brand-normal);
-  outline: none;
-}
-
-.form-input::placeholder {
-  color: var(--color-secondary-dark);
-  font-style: 16px;
-  line-height: 1.17;
-}
-.form-input:focus::placeholder {
-  color: var(--color-primary-dark);
-}
-.form-button {
-  display: block;
-  margin: 0 auto 24px;
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--color-secondary-dark);
+    color: var(--color-primary-dark);
+    border-radius: 16px;
+    font-style: 16px;
+    line-height: 1.17;
+    background-color: transparent;
+    &:focus {
+      border-color: var(--color-brand-normal);
+      outline: none;
+    }
+    &::placeholder {
+      color: var(--color-secondary-dark);
+      font-style: 16px;
+      line-height: 1.17;
+    }
+    :focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+  &__label {
+    padding: 24px;
+  }
 }
 .form-terms {
   font-style: 12px;
   font-weight: 500;
   text-align: center;
   margin: 0 auto;
+  a {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+  }
 }
-.form-terms a {
-  color: var(--color-primary-dark);
-  text-underline-offset: 2px;
-}
+
 .form-title {
   text-align: center;
   font-size: 56px;
@@ -60,20 +51,17 @@
 .checkbox {
   position: relative;
 }
-.form-label {
-  padding: 24px;
-}
-.form-label::before {
-  border-radius: 2px;
-  top: 0;
-  left: 0;
-  margin-top: 5px;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  content: '';
-  border: 1px solid var(--color-primary-dark);
-}
-.form-checkbox:checked + .form-label::before {
-  background-color: var(--color-brand-normal);
-}
+// .form-label::before {
+//   border-radius: 2px;
+//   top: 0;
+//   left: 0;
+//   margin-top: 5px;
+//   width: 16px;
+//   height: 16px;
+//   position: absolute;
+//   content: '';
+//   border: 1px solid var(--color-primary-dark);
+// }
+// .form-checkbox:checked + .form-label::before {
+//   background-color: var(--color-brand-normal);
+// }

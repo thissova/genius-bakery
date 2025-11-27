@@ -1,26 +1,26 @@
-header {
+.header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 32px;
 
-  .header-container {
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
   }
-}
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
-.header-menu {
-  flex-grow: 1;
-  justify-content: center;
-  display: flex;
-  gap: 64px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+  &__menu {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    gap: 64px;
+  }
 }
