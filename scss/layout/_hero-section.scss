@@ -1,5 +1,4 @@
 .hero-section {
-  padding: 272px 0;
   background: linear-gradient(
       127deg,
       rgba(18, 18, 17, 0.78) 0%,
@@ -8,14 +7,46 @@
     ),
     url('/images/hero-section-background.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: top center;
   background-size: cover;
+  padding: 122px 0;
+  @media screen and (min-width: $bp-desktop) {
+    padding: 272px 0;
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: linear-gradient(
+        127deg,
+        rgba(18, 18, 17, 0.78) 0%,
+        rgba(18, 18, 17, 0.6) 63.89%,
+        rgba(18, 18, 17, 0) 100%
+      ),
+      url('/images/hero-section-background@2x.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
   &__title {
+    margin-bottom: 48px;
     color: var(--color-primary-light);
     text-align: center;
     /* text-transform: uppercase; */
-    font-size: 128px;
+    font-size: 67px;
+    line-height: 1;
     font-weight: 900;
-    margin-bottom: 0;
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 0;
+      font-size: 128px;
+
+      line-height: 1.5;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
