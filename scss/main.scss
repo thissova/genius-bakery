@@ -13,7 +13,13 @@
 @import './components/chef-card';
 @import './components/format-card';
 @import './components/input';
+@import './components/pagination';
 
+@import './layout/container';
+@import './layout/section';
+@import './layout/modal';
+@import './layout/forms';
+@import './layout/mobile-menu';
 @import './layout/header';
 @import './layout/hero-section';
 @import './layout/advantages';
@@ -22,8 +28,3 @@
 @import './layout/formats';
 @import './layout/contacts';
 @import './layout/footer';
-@import './layout/modal';
-@import './layout/forms';
-@import './layout/container';
-@import './layout/section';
-@import './layout/mobile-menu';

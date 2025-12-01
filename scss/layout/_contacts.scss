@@ -6,11 +6,28 @@
   }
   &__container {
     display: flex;
-    gap: 32px;
+    gap: 24px;
+    flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+      gap: 32px;
+      flex-direction: row;
+    }
   }
   &__map {
     flex-shrink: 0;
     border-radius: 16px;
+    height: 176px;
+    margin: 0 -24px;
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      margin: auto;
+      height: 595px;
+      width: 600px;
+    }
   }
   &__form-field {
     margin-bottom: 24px;
